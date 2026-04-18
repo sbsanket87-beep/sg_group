@@ -192,77 +192,95 @@
         <button onclick="toggleMenu()" class="lg:hidden text-xl"><i class="fas fa-bars-staggered"></i></button>
     </nav>
 
-    <section class="min-h-screen flex flex-col lg:flex-row overflow-hidden">
+    <section class="flex flex-col lg:flex-row overflow-hidden">
 
 <!-- Panel 1 -->
-<div class="hero-panel relative group border-b lg:border-b-0 lg:border-r border-white/10 overflow-hidden w-full lg:w-1/2">
+<div class="hero-panel relative group border-b lg:border-b-0 lg:border-r border-white/10 overflow-hidden w-full lg:w-1/2 min-h-[70vh] lg:min-h-screen">
+    
     <div class="hero-img-container relative w-full h-full">
         
         <div class="hero-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-1000">
-        <img src="/storage/images/construction-site.png"
- class="w-full h-full object-cover"
- alt="Construction">
+            <img src="/storage/images/construction-site.png"
+                 class="w-full h-full object-cover"
+                 alt="Construction">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
-            <img src="/storage/images/Const.jpg?q=80&w=2070&auto=format&fit=crop"
+            <img src="/storage/images/Const.jpg"
                  class="w-full h-full object-cover" alt="Construction">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
-            <img src="/storage/images/Constructionimage1.jpg?q=80&w=2070&auto=format&fit=crop"
+            <img src="/storage/images/Constructionimage1.jpg"
                  class="w-full h-full object-cover" alt="Construction">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
     </div>
 
-    <!-- Text content -->
-    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-20 pointer-events-none">
-        <h2 class="font-sync text-5xl lg:text-4xl text-white mb-6 tracking-tighter" style="text-shadow: 0 10px 30px rgba(0,0,0,0.8);">Construction Services</h2>
-        <div class="w-20 h-1 bg-[#FF6B00] mb-8"></div>
-        <p class="text-gray-100 max-w-lg mb-10 text-base lg:text-lg leading-relaxed font-light">
-            The construction industry involves the planning, design, building, and maintenance of structures, requiring collaboration between skilled professionals, engineers, and specialized trades to deliver high-quality projects.
+    <!-- Text -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 py-16 lg:py-0 z-20">
+        
+        <h2 class="font-sync text-3xl sm:text-4xl lg:text-5xl text-white mb-4 tracking-tighter">
+            Construction Services
+        </h2>
+
+        <div class="w-16 h-1 bg-[#FF6B00] mb-6"></div>
+
+        <p class="text-gray-200 max-w-md mb-8 text-sm lg:text-lg leading-relaxed">
+            The construction industry involves planning, design, building, and maintenance with skilled professionals delivering high-quality projects.
         </p>
+
         <a href="{{ url('/services') }}"
-           class="pointer-events-auto border border-white/50 px-10 py-4 text-white text-sm font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">
+           class="border border-white/50 px-8 py-3 lg:px-10 lg:py-4 text-white text-xs lg:text-sm font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">
            Explore Sector
         </a>
     </div>
 </div>
 
+
 <!-- Panel 2 -->
-<div class="hero-panel relative group overflow-hidden w-full lg:w-1/2">
+<div class="hero-panel relative group overflow-hidden w-full lg:w-1/2 min-h-[70vh] lg:min-h-screen">
+
     <div class="hero-img-container relative w-full h-full">
+
         <div class="hero-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-1000">
-            <img src="/storage/images/cargo.png?q=80&w=2070&auto=format&fit=crop"
+            <img src="/storage/images/cargo.png"
                  class="w-full h-full object-cover" alt="Trade">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
-            <img src="/storage/images/mac.jpg?q=80&w=2070&auto=format&fit=crop"
+            <img src="/storage/images/mac.jpg"
                  class="w-full h-full object-cover" alt="Trade">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
-            <img src="/storage/images/trade.jpg?q=80&w=2070&auto=format&fit=crop"
+            <img src="/storage/images/trade.jpg"
                  class="w-full h-full object-cover" alt="Trade">
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
+
     </div>
 
-    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-20 pointer-events-none">
-        <h2 class="font-sync text-5xl lg:text-4xl text-white mb-6 tracking-tighter" style="text-shadow: 0 10px 30px rgba(0,0,0,0.8);">Importer & Traders</h2>
-        <div class="w-20 h-1 bg-[#FF6B00] mb-8"></div>
-        <p class="text-gray-100 max-w-lg mb-10 text-base lg:text-lg leading-relaxed font-light">
-        Our company provides a wide range of construction machines and industrial equipment for trade, including advanced wire saw machines, concrete cutting tools, and heavy construction machinery. We ensure high performance, durability, and cost-effective solutions for contractors and engineering projects.
+    <!-- Text -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 py-16 lg:py-0 z-20">
+        
+        <h2 class="font-sync text-3xl sm:text-4xl lg:text-5xl text-white mb-4 tracking-tighter">
+            Importer & Traders
+        </h2>
+
+        <div class="w-16 h-1 bg-[#FF6B00] mb-6"></div>
+
+        <p class="text-gray-200 max-w-md mb-8 text-sm lg:text-lg leading-relaxed">
+            We provide construction machines and industrial equipment with high performance, durability, and cost-effective solutions.
         </p>
+
         <a href="{{ url('/products') }}"
-           class="pointer-events-auto border border-white/50 px-10 py-4 text-white text-sm font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">
+           class="border border-white/50 px-8 py-3 lg:px-10 lg:py-4 text-white text-xs lg:text-sm font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">
            Explore Logistics
         </a>
     </div>
@@ -809,48 +827,68 @@
   </div>
 </footer>
 
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
+<script>
+    gsap.registerPlugin(ScrollTrigger);
 
-        function toggleMenu() {
-            document.getElementById('mobile-menu').classList.toggle('active');
+    function toggleMenu() {
+        document.getElementById('mobile-menu').classList.toggle('active');
+    }
+
+    // ✅ FAST LOADER FIX (no waiting for heavy images)
+    document.addEventListener('DOMContentLoaded', function () {
+        const loader = document.getElementById('loader');
+
+        // small delay just for smooth feel (not heavy)
+        setTimeout(() => {
+            gsap.to(loader, {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => loader.style.display = 'none'
+            });
+        }, 300); // was heavy before → now super fast
+    });
+
+    // ✅ FAILSAFE (if something breaks)
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        if (loader) loader.style.display = 'none';
+    });
+
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            nav.classList.add('nav-scrolled', 'py-4');
+            nav.classList.remove('nav-transparent', 'py-6');
+        } else {
+            nav.classList.add('nav-transparent', 'py-6');
+            nav.classList.remove('nav-scrolled', 'py-4');
         }
+    });
 
-        window.addEventListener('load', () => {
-            gsap.to("#loader", { yPercent: -100, duration: 1, ease: "expo.inOut", delay: 0.5 });
+    gsap.to("#ticker", { xPercent: -50, repeat: -1, duration: 20, ease: "linear" });
+
+    document.querySelectorAll('.reveal-up').forEach(el => {
+        gsap.to(el, {
+            scrollTrigger: { trigger: el, start: "top 95%" },
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "power3.out"
         });
+    });
 
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('nav-scrolled', 'py-4');
-                nav.classList.remove('nav-transparent', 'py-6');
-            } else {
-                nav.classList.add('nav-transparent', 'py-6');
-                nav.classList.remove('nav-scrolled', 'py-4');
-            }
+    document.querySelectorAll('.counter').forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        gsap.to(counter, {
+            scrollTrigger: { trigger: counter, start: "top 90%" },
+            innerText: target,
+            duration: 2,
+            snap: { innerText: 1 }
         });
+    });
 
-        gsap.to("#ticker", { xPercent: -50, repeat: -1, duration: 20, ease: "linear" });
-
-        document.querySelectorAll('.reveal-up').forEach(el => {
-            gsap.to(el, {
-                scrollTrigger: { trigger: el, start: "top 95%" },
-                y: 0, opacity: 1, duration: 1.2, ease: "power3.out"
-            });
-        });
-
-        document.querySelectorAll('.counter').forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            gsap.to(counter, {
-                scrollTrigger: { trigger: counter, start: "top 90%" },
-                innerText: target,
-                duration: 2,
-                snap: { innerText: 1 }
-            });
-        });
-
-        function scrollLogos(distance) {
+    function scrollLogos(distance) {
         const container = document.getElementById('logoContainer');
         container.scrollBy({
             left: distance,
@@ -870,21 +908,21 @@
 
     let position = 0;
 
-function moveSlide(direction) {
-    const track = document.getElementById('productTrack');
-    const cards = track.children.length;
+    function moveSlide(direction) {
+        const track = document.getElementById('productTrack');
+        const cards = track.children.length;
 
-    let visible = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
+        let visible = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
 
-    position += direction;
+        position += direction;
 
-    if (position < 0) position = 0;
-    if (position > cards - visible) position = cards - visible;
+        if (position < 0) position = 0;
+        if (position > cards - visible) position = cards - visible;
 
-    const cardWidth = track.children[0].offsetWidth + 32; // gap
-    track.style.transform = `translateX(-${position * cardWidth}px)`;
-}
-    </script>
+        const cardWidth = track.children[0].offsetWidth + 32;
+        track.style.transform = `translateX(-${position * cardWidth}px)`;
+    }
+</script>
     <script>
 let serviceIndex = 0;
 
