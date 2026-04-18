@@ -192,29 +192,83 @@
         <button onclick="toggleMenu()" class="lg:hidden text-xl"><i class="fas fa-bars-staggered"></i></button>
     </nav>
 
-    <section class="min-h-screen flex flex-col lg:flex-row bg-black overflow-hidden">
-        <div class="hero-panel group border-b lg:border-b-0 lg:border-r border-white/10">
-            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop" class="hero-img" alt="Construction">
-            <div class="absolute inset-0 bg-black/40 z-[2]"></div>
-            <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-10 pointer-events-none">
-                <h2 class="font-sync text-5xl lg:text-8xl text-white mb-4 tracking-tighter" style="text-shadow: 0 10px 30px rgba(0,0,0,0.8);">BUILD</h2>
-                <div class="w-16 h-1 bg-[#FF6B00] mb-6"></div>
-                <p class="text-gray-200 max-w-xs mb-8 text-xs lg:text-sm font-light">Pioneering structural integrity through advanced civil engineering.</p>
-                <a href="#construction" class="pointer-events-auto border border-white/50 px-8 py-3 text-white text-[10px] font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">Explore Sector</a>
-            </div>
+    <section class="min-h-screen flex flex-col lg:flex-row overflow-hidden">
+
+<!-- Panel 1 -->
+<div class="hero-panel relative group border-b lg:border-b-0 lg:border-r border-white/10 overflow-hidden w-full lg:w-1/2">
+    <div class="hero-img-container relative w-full h-full">
+        
+        <div class="hero-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-1000">
+        <img src="/storage/images/construction-site.png"
+ class="w-full h-full object-cover"
+ alt="Construction">
+            <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
-        <div class="hero-panel group">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" class="hero-img" alt="Trade">
-            <div class="absolute inset-0 bg-black/40 z-[2]"></div>
-            <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-10 pointer-events-none">
-                <h2 class="font-sync text-5xl lg:text-8xl text-white mb-4 tracking-tighter" style="text-shadow: 0 10px 30px rgba(0,0,0,0.8);">TRADE</h2>
-                <div class="w-16 h-1 bg-[#FF6B00] mb-6"></div>
-                <p class="text-gray-200 max-w-xs mb-8 text-xs lg:text-sm font-light">Global logistics and strategic material exportation protocols.</p>
-                <a href="#trade" class="pointer-events-auto border border-white/50 px-8 py-3 text-white text-[10px] font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">Explore Logistics</a>
-            </div>
+        <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
+            <img src="/storage/images/Const.jpg?q=80&w=2070&auto=format&fit=crop"
+                 class="w-full h-full object-cover" alt="Construction">
+            <div class="absolute inset-0 bg-black/50"></div>
         </div>
-    </section>
+
+        <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
+            <img src="/storage/images/Constructionimage1.jpg?q=80&w=2070&auto=format&fit=crop"
+                 class="w-full h-full object-cover" alt="Construction">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+
+    </div>
+
+    <!-- Text content -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-20 pointer-events-none">
+        <h2 class="font-sync text-5xl lg:text-4xl text-white mb-6 tracking-tighter" style="text-shadow: 0 10px 30px rgba(0,0,0,0.8);">Construction Services</h2>
+        <div class="w-20 h-1 bg-[#FF6B00] mb-8"></div>
+        <p class="text-gray-100 max-w-lg mb-10 text-base lg:text-lg leading-relaxed font-light">
+            The construction industry involves the planning, design, building, and maintenance of structures, requiring collaboration between skilled professionals, engineers, and specialized trades to deliver high-quality projects.
+        </p>
+        <a href="{{ url('/services') }}"
+           class="pointer-events-auto border border-white/50 px-10 py-4 text-white text-sm font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">
+           Explore Sector
+        </a>
+    </div>
+</div>
+
+<!-- Panel 2 -->
+<div class="hero-panel relative group overflow-hidden w-full lg:w-1/2">
+    <div class="hero-img-container relative w-full h-full">
+        <div class="hero-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-1000">
+            <img src="/storage/images/cargo.png?q=80&w=2070&auto=format&fit=crop"
+                 class="w-full h-full object-cover" alt="Trade">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
+            <img src="/storage/images/mac.jpg?q=80&w=2070&auto=format&fit=crop"
+                 class="w-full h-full object-cover" alt="Trade">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        <div class="hero-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-1000">
+            <img src="/storage/images/trade.jpg?q=80&w=2070&auto=format&fit=crop"
+                 class="w-full h-full object-cover" alt="Trade">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+    </div>
+
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 z-20 pointer-events-none">
+        <h2 class="font-sync text-5xl lg:text-4xl text-white mb-6 tracking-tighter" style="text-shadow: 0 10px 30px rgba(0,0,0,0.8);">Importer & Traders</h2>
+        <div class="w-20 h-1 bg-[#FF6B00] mb-8"></div>
+        <p class="text-gray-100 max-w-lg mb-10 text-base lg:text-lg leading-relaxed font-light">
+        Our company provides a wide range of construction machines and industrial equipment for trade, including advanced wire saw machines, concrete cutting tools, and heavy construction machinery. We ensure high performance, durability, and cost-effective solutions for contractors and engineering projects.
+        </p>
+        <a href="{{ url('/products') }}"
+           class="pointer-events-auto border border-white/50 px-10 py-4 text-white text-sm font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:border-[#FF6B00] transition-all">
+           Explore Logistics
+        </a>
+    </div>
+</div>
+
+</section>
 
     <section class="py-20 bg-black border-t border-white/5 relative group">
     <div class="container mx-auto px-6 mb-12">
@@ -287,69 +341,166 @@
                         The Core of <br><span class="text-gray-300 italic">Modern Industry.</span>
                     </h2>
                     <p class="text-gray-500 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
-                        S G Group India serves as a vertically integrated industrial group. We manage the entire lifecycle of development, from procurement to global engineering.
+                    To become a leading engineering and construction services company in the region by delivering high quality, innovative, and reliable construction solutions that meet international standards.
                     </p>
                     <div class="grid grid-cols-2 gap-6 lg:gap-10">
                         <div class="p-6 lg:p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                            <h3 class="text-3xl lg:text-4xl font-black text-[#FF6B00]">15yr+</h3>
-                            <p class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Market Authority</p>
+                            <h3 class="text-3xl lg:text-4xl font-black text-[#FF6B00]">25yr+</h3>
+                            <p class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Years of experience with proud</p>
                         </div>
                         <div class="p-6 lg:p-8 bg-white rounded-3xl shadow-sm border border-gray-100">
-                            <h3 class="text-3xl lg:text-4xl font-black text-[#FF6B00] counter" data-target="850">0</h3>
-                            <p class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Annual Tonnes (k)</p>
+                            <h3 class="text-3xl lg:text-4xl font-black text-[#FF6B00] counter" data-target="512">0</h3>
+                            <p class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Successfully Project Finished.</p>
                         </div>
                     </div>
                 </div>
                 <div class="relative reveal-up hidden lg:block">
                     <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#FF6B00] rounded-full z-0 opacity-10 floating"></div>
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" class="rounded-[3rem] shadow-2xl relative z-10 grayscale" alt="Industry Leadership">
+                    <img src="/storage/images/hero.jpg?q=80&w=2070&auto=format&fit=crop" class="rounded-[3rem] shadow-2xl relative z-10 grayscale" alt="Industry Leadership">
                 </div>
             </div>
         </div>
     </section>
 
     <section id="services" class="py-20 lg:py-32 bg-white px-6 lg:px-12">
-        <div class="container mx-auto">
-            <div class="mb-12 lg:mb-20 reveal-up flex flex-col lg:flex-row justify-between items-end gap-6">
-                <div>
-                    <h2 class="font-sync text-3xl lg:text-4xl mb-4 uppercase">Our <span class="text-[#FF6B00]">Services</span></h2>
-                    <p class="text-gray-400 text-[10px] tracking-[0.2em] uppercase">Engineering precision for complex projects</p>
-                </div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-up">
-                <div class="service-card-modern group">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="service-overlay text-white">
-                        <h3 class="text-2xl font-bold mb-4">Wall Cutting Services</h3>
-                        <a href="{{ url('/wall-cutting') }}" class="w-fit bg-white text-black px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:text-white transition-colors duration-300">
-            Read More
-        </a>
-                    </div>
-                </div>
+    <div class="container mx-auto">
 
-                <div class="service-card-modern group">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="service-overlay text-white">
-                        <h3 class="text-2xl font-bold mb-4">Core Drilling</h3>
-                        <a href="{{ url('/wall-cutting') }}" class="w-fit bg-white text-black px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:text-white transition-colors duration-300">
-            Read More
-        </a>
-                    </div>
-                </div>
-
-                <div class="service-card-modern group">
-                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1000" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="service-overlay text-white">
-                        <h3 class="text-2xl font-bold mb-4">Floor Sawing</h3>
-                        <a href="{{ url('/wall-cutting') }}" class="w-fit bg-white text-black px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:text-white transition-colors duration-300">
-            Read More
-        </a>
-                    </div>
-                </div>
+        <!-- Header -->
+        <div class="mb-12 lg:mb-20 flex flex-col lg:flex-row justify-between items-end gap-6">
+            <div>
+                <h2 class="font-sync text-3xl lg:text-4xl uppercase">
+                    Our <span class="text-[#FF6B00]">Products</span>
+                </h2>
+                <p class="text-gray-400 text-[10px] tracking-[0.2em] uppercase">
+                    Engineering precision for complex projects
+                </p>
             </div>
+
+            <!-- SEE ALL BUTTON -->
+            <a href="{{ url('/products') }}"
+               class="bg-black text-white px-6 py-3 rounded-xl text-[10px] uppercase tracking-widest hover:bg-[#FF6B00] transition">
+               See All
+            </a>
         </div>
-    </section>
+
+        <!-- Carousel -->
+        <div class="relative overflow-hidden">
+
+            <!-- Track -->
+            <div id="productTrack" class="flex gap-8 transition-transform duration-500">
+                
+                @foreach($products as $product)
+                <div class="min-w-[100%] md:min-w-[48%] lg:min-w-[30%] service-card-modern group">
+                    
+                    <img src="{{ asset('storage/'.$product->image) }}"
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                    <div class="service-overlay text-white">
+                        <h3 class="text-2xl font-bold mb-4">
+                            {{ $product->name }}
+                        </h3>
+
+                        <a href="{{ route('product.show', $product->id) }}"
+                           class="w-fit bg-white text-black px-8 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#FF6B00] hover:text-white transition">
+                           Read More
+                        </a>
+                    </div>
+                </div>
+                @endforeach
+
+            </div>
+
+            <!-- LEFT BUTTON -->
+            <button onclick="moveSlide(-1)"
+                class="absolute left-0 top-1/2 -translate-y-1/2 bg-black text-white w-10 h-10 rounded-full z-10">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <!-- RIGHT BUTTON -->
+            <button onclick="moveSlide(1)"
+                class="absolute right-0 top-1/2 -translate-y-1/2 bg-black text-white w-10 h-10 rounded-full z-10">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="services" class="py-20 lg:py-32 bg-[#020202] px-6 lg:px-12">
+    <div class="container mx-auto">
+
+        <!-- HEADER -->
+        <div class="mb-12 lg:mb-20 flex flex-col lg:flex-row justify-between items-end gap-6">
+            <div>
+                <h2 class="font-sync text-3xl lg:text-4xl uppercase text-white">
+                    Our <span class="text-[#FF6B00]">Services</span>
+                </h2>
+                <p class="text-gray-500 text-[10px] tracking-[0.2em] uppercase">
+                    What we deliver with excellence
+                </p>
+            </div>
+
+            <a href="{{ url('/services') }}"
+               class="border border-white/20 text-white px-6 py-3 rounded-xl text-[10px] uppercase tracking-widest hover:border-[#FF6B00] hover:text-[#FF6B00] transition">
+               Explore All
+            </a>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="relative overflow-hidden">
+
+            <!-- TRACK -->
+            <div id="serviceTrack" class="flex gap-8 transition-transform duration-500">
+
+                @foreach($services as $service)
+                <div class="min-w-[100%] md:min-w-[48%] lg:min-w-[30%] group relative">
+
+                    <!-- CARD -->
+                    <div class="relative rounded-3xl overflow-hidden border border-white/10">
+
+                        <!-- IMAGE -->
+                        <img src="{{ asset('storage/'.$service->image) }}"
+                             class="w-full h-[420px] object-cover transition duration-700 group-hover:scale-105">
+
+                        <!-- GRADIENT OVERLAY -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                        <!-- CONTENT -->
+                        <div class="absolute bottom-0 p-6">
+
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                {{ $service->name }}
+                            </h3>
+
+                            <a href="{{ route('services.show', $service->id) }}"
+                               class="inline-block bg-[#FF6B00] text-white px-6 py-2 rounded-lg text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition">
+                               Learn More
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                @endforeach
+
+            </div>
+
+            <!-- LEFT -->
+            <button onclick="moveService(-1)"
+                class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur w-10 h-10 rounded-full text-white hover:bg-[#FF6B00] transition">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <!-- RIGHT -->
+            <button onclick="moveService(1)"
+                class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur w-10 h-10 rounded-full text-white hover:bg-[#FF6B00] transition">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
 
     <!--<section id="construction" class="py-20 lg:py-32 bg-gray-50 px-6 lg:px-12">
         <div class="container mx-auto">
@@ -392,63 +543,157 @@
     </section>-->
 
     <section id="cinema" class="py-20 lg:py-32 bg-gray-50 px-6 lg:px-12">
-        <div class="container mx-auto">
-            <div class="text-center mb-16 reveal-up">
-                <h2 class="font-sync text-2xl lg:text-4xl mb-4 uppercase">Industrial <span class="text-[#FF6B00]">Cinema</span></h2>
-            </div>
-            <div class="grid lg:grid-cols-12 gap-8">
-                <div class="lg:col-span-8 relative h-[300px] lg:h-[500px] rounded-3xl overflow-hidden reveal-up">
-                    <div class="absolute inset-0 flex items-center justify-center z-10">
-                        <div class="w-16 h-16 bg-[#FF6B00] rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition"><i class="fas fa-play"></i></div>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200" class="w-full h-full object-cover grayscale">
-                </div>
-                <div class="lg:col-span-4 flex flex-col gap-8">
-                    <div class="flex-1 min-h-[150px] bg-black rounded-3xl overflow-hidden reveal-up">
-                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600" class="w-full h-full object-cover opacity-50">
-                    </div>
-                    <div class="flex-1 min-h-[150px] bg-black rounded-3xl overflow-hidden reveal-up">
-                        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=600" class="w-full h-full object-cover opacity-50">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="container mx-auto">
+    
+    <!-- Heading -->
+    <div class="text-center mb-12 reveal-up">
+      <h2 class="font-sync text-2xl lg:text-4xl mb-4 uppercase">
+        Industrial <span class="text-[#FF6B00]">Cinema</span>
+      </h2>
 
+      <!-- YouTube Button -->
+      <a href="https://www.youtube.com/@SGGROUP-9333/videos" 
+         target="_blank"
+         class="inline-block mt-4 px-6 py-3 bg-[#FF6B00] text-white rounded-full hover:scale-105 transition shadow-lg">
+        Watch More on YouTube
+      </a>
+    </div>
+
+    <!-- Videos Layout -->
+    <div class="lg:flex lg:gap-8 items-stretch">
+      
+      <!-- LEFT: Big Video -->
+      <div class="lg:w-2/3 mb-8 lg:mb-0 reveal-up">
+        <div class="rounded-3xl overflow-hidden h-full">
+          <iframe 
+            class="w-full h-[300px] lg:h-[500px]" 
+            src="https://www.youtube.com/embed/5a6fKdb13Lk" 
+            title="Main Video"
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- RIGHT: 2 Small Videos -->
+      <div class="lg:w-1/3 flex flex-col gap-6 reveal-up">
+        
+        <div class="rounded-3xl overflow-hidden">
+          <iframe 
+            class="w-full h-[150px] lg:h-[240px]" 
+            src="https://www.youtube.com/embed/O-XIEtBoJ_g" 
+            title="Video 2"
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden">
+          <iframe 
+            class="w-full h-[150px] lg:h-[240px]" 
+            src="https://www.youtube.com/embed/WeKBzRVIrNQ" 
+            title="Video 3"
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
     <section id="gallery" class="py-20 lg:py-32 bg-white px-6 lg:px-12">
         <div class="container mx-auto">
             <h2 class="font-sync text-center text-2xl lg:text-3xl mb-16 lg:mb-24 uppercase">Project Showcase</h2>
             <div class="gallery-grid">
                 <div class="gallery-item-wide rounded-3xl overflow-hidden h-64 lg:h-80 reveal-up">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000" class="w-full h-full object-cover">
+                    <img src="/storage/images/gallery1.jpeg?q=80&w=1000" class="w-full h-full object-cover">
                 </div>
                 <div class="rounded-3xl overflow-hidden h-64 lg:h-80 reveal-up">
-                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1000" class="w-full h-full object-cover">
+                    <img src="/storage/images/gallery12.jpg?q=80&w=1000" class="w-full h-full object-cover">
                 </div>
                 <div class="rounded-3xl overflow-hidden h-64 lg:h-80 reveal-up">
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1000" class="w-full h-full object-cover">
+                    <img src="/storage/images/gallery3.jpeg?q=80&w=1000" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-3xl overflow-hidden h-64 lg:h-80 reveal-up">
+                    <img src="/storage/images/gallery4.jpeg?q=80&w=1000" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-3xl overflow-hidden h-64 lg:h-80 reveal-up">
+                    <img src="/storage/images/gallery5.jpeg?q=80&w=1000" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="py-20 lg:py-32 bg-[#1A1C1E] text-white px-6 lg:px-12">
-        <div class="container mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="reveal-up">
-                    <h2 class="font-sync text-3xl lg:text-4xl mb-8 uppercase tracking-tighter">Live Trade <span class="text-[#FF6B00]">Metrics.</span></h2>
-                    <div class="grid grid-cols-2 gap-8">
-                        <div><h3 class="text-4xl lg:text-5xl font-black text-[#FF6B00] mb-2 counter" data-target="42">0</h3><p class="text-[9px] uppercase tracking-widest text-gray-500 font-bold">Active Vessels</p></div>
-                        <div><h3 class="text-4xl lg:text-5xl font-black text-[#FF6B00] mb-2 counter" data-target="98">0</h3><p class="text-[9px] uppercase tracking-widest text-gray-500 font-bold">Success Rate %</p></div>
-                    </div>
-                </div>
-                <div class="space-y-6 reveal-up">
-                    <div class="bg-white/5 p-8 rounded-2xl flex justify-between items-center border-l-4 border-[#FF6B00]"><span class="text-[10px] font-bold uppercase tracking-widest">Steel Export (MT)</span><span class="text-[#FF6B00] font-black text-2xl">1.2M</span></div>
-                    <div class="bg-white/5 p-8 rounded-2xl flex justify-between items-center"><span class="text-[10px] font-bold uppercase tracking-widest">Active Tenders</span><span class="text-white font-black text-2xl">214</span></div>
-                </div>
-            </div>
+  <div class="container mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-16 reveal-up">
+      <h2 class="font-sync text-3xl lg:text-4xl uppercase tracking-tighter">
+        About Our <span class="text-[#FF6B00]">Company</span>
+      </h2>
+      <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-base lg:text-lg leading-relaxed">
+        We are a trusted engineering, construction, and machinery trading company, committed to delivering high-quality construction solutions and industrial equipment. Our focus is on innovation, reliability, and customer satisfaction, ensuring every project meets the highest standards of performance and safety.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left Content -->
+      <div class="space-y-8 reveal-up">
+        
+        <h3 class="text-2xl lg:text-3xl font-semibold">
+          Quality Services & Commitment
+        </h3>
+
+        <p class="text-gray-300 text-base lg:text-lg leading-relaxed">
+          We deliver comprehensive construction services and supply advanced machinery, including wire saw machines and industrial equipment. Our mission is to provide durable, efficient, and cost-effective solutions while maintaining long-term relationships built on trust, integrity, and excellence.
+        </p>
+
+        <p class="text-gray-400 text-base lg:text-lg leading-relaxed">
+          From planning and execution to delivery, we ensure every project is completed on time using modern technology, latest designs, and industry best practices. We are dedicated to creating sustainable solutions that keep people safe and support future growth.
+        </p>
+
+        <!-- Button -->
+        <a href="{{ url('/contact') }}"
+           class="inline-block mt-4 px-8 py-4 bg-[#FF6B00] text-white uppercase text-sm font-bold tracking-widest rounded-full hover:scale-105 transition shadow-lg">
+          Get In Touch
+        </a>
+
+      </div>
+
+      <!-- Right Content (Highlights / Features) -->
+      <div class="grid grid-cols-2 gap-6 reveal-up">
+
+        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-[#FF6B00]">
+          <h4 class="text-lg font-bold mb-2">Sustainability</h4>
+          <p class="text-gray-400 text-sm">Eco-friendly and sustainable construction practices for long-term impact.</p>
         </div>
-    </section>
+
+        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-[#FF6B00]">
+          <h4 class="text-lg font-bold mb-2">On-Time Delivery</h4>
+          <p class="text-gray-400 text-sm">Efficient project management ensuring timely completion of all projects.</p>
+        </div>
+
+        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-[#FF6B00]">
+          <h4 class="text-lg font-bold mb-2">Modern Technology</h4>
+          <p class="text-gray-400 text-sm">Utilizing advanced machinery and innovative construction solutions.</p>
+        </div>
+
+        <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-[#FF6B00]">
+          <h4 class="text-lg font-bold mb-2">Latest Designs</h4>
+          <p class="text-gray-400 text-sm">Creative and modern design approaches tailored to client needs.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <section id="contact" class="py-20 bg-white px-6 lg:px-20 border-t border-gray-100">
     <div class="container mx-auto max-w-6xl">
@@ -460,8 +705,8 @@
                     Let's <br>Connect.
                 </h2>
                 <div class="space-y-4 text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                    <p class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-[#FF6B00]"></i> Mumbai, MH, India</p>
-                    <p class="flex items-center gap-3"><i class="fas fa-envelope text-[#FF6B00]"></i> contact@sggroupindia.com</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-[#FF6B00]"></i> Pune, India</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-envelope text-[#FF6B00]"></i>  sggrouppune@gmail.com</p>
                 </div>
             </div>
 
@@ -518,16 +763,51 @@
         </button>
     </div>
 </div>
-    <footer class="py-12 lg:py-20 bg-white px-6 lg:px-12 border-t border-gray-100">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-[9px] font-bold uppercase tracking-widest text-gray-400 gap-8">
-            <div class="font-sync text-xl text-black">S G <span class="text-[#FF6B00]">GROUP</span></div>
-            <div class="flex gap-8">
-                <a href="#" class="hover:text-black">Privacy</a>
-                <a href="#" class="hover:text-black">Terms</a>
-            </div>
-            <p>© 2026 S G Group India International</p>
-        </div>
-    </footer>
+<footer class="py-12 lg:py-20 bg-white px-6 lg:px-12 border-t border-gray-100">
+  <div class="container mx-auto grid md:grid-cols-3 gap-10 text-sm text-gray-500">
+
+    <!-- Company Info -->
+    <div>
+      <div class="font-sync text-2xl text-black mb-4">
+        S G <span class="text-[#FF6B00]">GROUP</span>
+      </div>
+      <p class="leading-relaxed">
+        Trusted engineering, construction, and machinery trading company delivering quality services and innovative solutions across India.
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-black font-bold mb-4 uppercase tracking-widest text-xs">Contact Us</h3>
+      <p class="mb-3">
+        Shop No 9 S.M. Shinde, Near Hotel Appel,<br>
+        Pune Mumbai Road, Kasawadi,<br>
+        Pune - 411034
+      </p>
+      <p class="mb-2">📞 +91 9850100284</p>
+      <p class="mb-2">📞 +91 9881820284</p>
+      <p class="mb-2">✉️ sggrouppune@gmail.com</p>
+    </div>
+
+    <!-- Working Hours + Links -->
+    <div>
+      <h3 class="text-black font-bold mb-4 uppercase tracking-widest text-xs">Working Hours</h3>
+      <p class="mb-3">Mon - Sat: 8:00 AM - 5:30 PM</p>
+      <p class="mb-6">Sunday: Closed</p>
+
+      <div class="flex gap-6 text-xs font-bold uppercase tracking-widest">
+        <a href="#" class="hover:text-black">Privacy</a>
+        <a href="#" class="hover:text-black">Terms</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-10 pt-6 border-t border-gray-200 text-center text-xs text-gray-400 font-bold tracking-widest">
+    © 2026 S G Group India International. All Rights Reserved.
+  </div>
+</footer>
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
@@ -587,6 +867,56 @@
             document.getElementById('thankYouModal').classList.remove('hidden');
         });
     @endif
+
+    let position = 0;
+
+function moveSlide(direction) {
+    const track = document.getElementById('productTrack');
+    const cards = track.children.length;
+
+    let visible = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
+
+    position += direction;
+
+    if (position < 0) position = 0;
+    if (position > cards - visible) position = cards - visible;
+
+    const cardWidth = track.children[0].offsetWidth + 32; // gap
+    track.style.transform = `translateX(-${position * cardWidth}px)`;
+}
     </script>
+    <script>
+let serviceIndex = 0;
+
+function moveService(direction){
+    const track = document.getElementById('serviceTrack');
+    const total = track.children.length;
+
+    serviceIndex += direction;
+
+    if(serviceIndex < 0) serviceIndex = total - 1;
+    if(serviceIndex >= total) serviceIndex = 0;
+
+    const width = track.children[0].offsetWidth + 32; // gap
+    track.style.transform = `translateX(-${serviceIndex * width}px)`;
+}
+</script>
+<script>
+    const panels = document.querySelectorAll('.hero-img-container');
+
+    panels.forEach(panel => {
+        const slides = panel.querySelectorAll('.hero-slide');
+        let index = 0;
+
+        setInterval(() => {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = (i === index) ? '1' : '0';
+                slide.style.zIndex = (i === index) ? '10' : '0';
+            });
+
+            index = (index + 1) % slides.length;
+        }, 4000); // change every 4 seconds
+    });
+</script>
 </body>
 </html>
